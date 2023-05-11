@@ -1,4 +1,4 @@
-package com.example.user.presentor.model;
+package com.example.user.presentor.dto.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

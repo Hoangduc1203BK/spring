@@ -1,6 +1,5 @@
 package com.example.user.service;
 
-import com.example.user.common.BussinessException;
 import com.example.user.common.error.UserError;
 import com.example.user.common.validator.Validator;
 import com.example.user.persistence.repository.UserRepository;
@@ -8,7 +7,7 @@ import com.example.user.persistence.entity.User;
 import com.example.user.presentor.dto.CreateUserDto;
 import com.example.user.presentor.dto.GetUserDto;
 import com.example.user.presentor.dto.ListUserDto;
-import com.example.user.presentor.model.UserModel;
+import com.example.user.presentor.dto.model.UserModel;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,15 +34,6 @@ public class UserService {
     }
 
     public UserModel createUser(CreateUserDto data) {
-        if(!validator.isValidEmail(data.getEmail())) {
-            logger.error(new UserError.InvalidEmail().getMessage());
-            throw new UserError.InvalidEmail();
-        }
-
-        if(!validator.isValidPhoneNumber(data.getPhoneNumber())) {
-            logger.error(new UserError.InvalidPhoneNumber(data.getPhoneNumber()).getMessage());
-            throw new UserError.InvalidPhoneNumber(data.getPhoneNumber());
-        }
         Optional<User> user = userRepos.findByEmailAndPhonenumber(data.getEmail(), null);
         if(user.isPresent()) {
             logger.error(new UserError.EmailExist(data.getEmail()).getMessage());
@@ -65,7 +55,7 @@ public class UserService {
 
     public UserModel getUser(GetUserDto params) {
         Optional<User> user = userRepos.findById(params.getId().longValue());
-        if(!user.isPresent()) {
+        if(!user.isPresent()){
             logger.error(new UserError.UserNotFound().getMessage());
             throw new UserError.UserNotFound();
         }
@@ -78,8 +68,8 @@ public class UserService {
 
     public UserModel getUserInfor(GetUserDto params) {
         if(params.getEmail() != null && !validator.isValidEmail(params.getEmail())) {
-            logger.error(new UserError.InvalidEmail().getMessage());
-            throw new UserError.InvalidEmail();
+            logger.error(new UserError.InvalidEmail(params.getEmail()).getMessage());
+            throw new UserError.InvalidEmail(params.getEmail());
         }
 
         if(params.getPhoneNumber() != null && !validator.isValidPhoneNumber(params.getPhoneNumber())) {

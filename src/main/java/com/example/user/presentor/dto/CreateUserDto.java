@@ -15,6 +15,13 @@ public class CreateUserDto {
     private String phoneNumber;
     @NotNull
     private Long balance;
+    public CreateUserDto(String name, String email, String phoneNumber, String password, Long balance) {
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.balance = balance;
+    }
     public String getName() {return name; }
     public String getEmail() {return email;}
     public String getPhoneNumber() {return phoneNumber;}

@@ -4,8 +4,8 @@ import com.example.user.common.BussinessException;
 
 public class UserError {
     public static class InvalidEmail extends BussinessException {
-        public InvalidEmail() {
-            super("Invalid email");
+        public InvalidEmail(String email) {
+            super("Invalid email: "+email);
         }
     }
 
