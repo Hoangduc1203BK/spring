@@ -1,6 +1,7 @@
 package com.example.user.persistence.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Pattern;
 
 @Entity(name="user")
 @Table(name="users")
