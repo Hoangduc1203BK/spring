@@ -1462,3 +1462,23 @@ org.apache.tomcat.jni.LibraryNotFoundError: Can't load library: /home/hmduc5dus1
 2023-05-11T17:21:02.999+07:00 DEBUG 67200 --- [Catalina-utility-2] o.apache.catalina.session.ManagerBase    : End expire sessions StandardManager processingTime 0 expired sessions: 0
 2023-05-11T17:21:03.248+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 2023-05-11T17:21:03.248+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-05-11T17:21:33.248+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-11T17:21:33.248+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-05-11T17:22:03.001+07:00 DEBUG 67200 --- [Catalina-utility-1] o.apache.catalina.session.ManagerBase    : Start expire sessions StandardManager at 1683800523000 sessioncount 0
+2023-05-11T17:22:03.001+07:00 DEBUG 67200 --- [Catalina-utility-1] o.apache.catalina.session.ManagerBase    : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-05-11T17:22:03.248+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-11T17:22:03.249+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-05-11T17:22:33.249+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-11T17:22:33.249+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-05-11T17:23:03.002+07:00 DEBUG 67200 --- [Catalina-utility-1] o.apache.catalina.session.ManagerBase    : Start expire sessions StandardManager at 1683800583002 sessioncount 0
+2023-05-11T17:23:03.003+07:00 DEBUG 67200 --- [Catalina-utility-1] o.apache.catalina.session.ManagerBase    : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2023-05-11T17:23:03.249+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-11T17:23:03.250+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-05-11T17:23:33.250+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-11T17:23:33.250+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-05-11T17:24:03.004+07:00 DEBUG 67200 --- [Catalina-utility-1] o.apache.catalina.session.ManagerBase    : Start expire sessions StandardManager at 1683800643004 sessioncount 0
+2023-05-11T17:24:03.004+07:00 DEBUG 67200 --- [Catalina-utility-1] o.apache.catalina.session.ManagerBase    : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2023-05-11T17:24:03.250+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-11T17:24:03.250+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-05-11T17:24:33.251+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-11T17:24:33.251+07:00 DEBUG 67200 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
